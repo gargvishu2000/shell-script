@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 # portal-path=' aws s3 ls s3://softwaredocs/Portal/modeules/ROOT/pages'
 if [[ $(aws s3 ls s3://softwaredocs/Portal/modeules/ROOT/pages | head ) ]]; then
-aws s3 cp s3://antora/docs s3://softwaredocs/  --recursive
+aws s3 cp s3://antora/docs s3://softwaredocs/Portal/modules/ROOT/pages/  --recursive
 echo "1"
 else
 aws s3 cp s3://antora/docs s3://softwaredocs/Portal/modules/ROOT/pages/  --recursive
