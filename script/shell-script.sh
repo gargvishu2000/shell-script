@@ -15,4 +15,6 @@ else
 aws s3 cp s3://antora/docs/index.adoc s3://softwaredocs/Keycloak/modules/ROOT/pages/
 echo "4"
 fi
+
+npx antora antora-playbook.yml
 # npx antora antora-playbook.yml
