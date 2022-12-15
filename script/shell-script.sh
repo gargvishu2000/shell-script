@@ -16,10 +16,10 @@ aws s3 cp s3://antora/docs/index.adoc s3://softwaredocs/Keycloak/modules/ROOT/pa
 echo "4"
 fi
 
-sudo npm install -g npx
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 source ~/.bashrc
+sudo npm install -g npx
 nvm install v16.2.0
 node -e "fs.writeFileSync('package.json', '{}')"
 npm i -D -E @antora/cli@3.1 @antora/site-generator@3.1
