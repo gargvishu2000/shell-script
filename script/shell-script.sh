@@ -16,7 +16,7 @@ aws s3 cp s3://antora/docs/index.adoc s3://softwaredocs/Keycloak/modules/ROOT/pa
 echo "4"
 fi
 
-npm install -g npx
+sudo npm install -g npx
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 source ~/.bashrc
